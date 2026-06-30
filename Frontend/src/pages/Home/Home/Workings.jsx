@@ -1,11 +1,13 @@
 import React from 'react';
 import Card from '../../../components/Cards/Card';
+import { CiDeliveryTruck } from 'react-icons/ci';
 
 const Workings = ({card}) => {
     const {title,description}=card;
+    const icon=<CiDeliveryTruck size={50}/>;
     return (
         <div>
-            <Card title={title} description={description}/>
+            <Card icon={icon} title={title} description={description}/>
         </div>
     );
 };

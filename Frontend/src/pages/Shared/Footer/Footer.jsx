@@ -3,7 +3,7 @@ import Logo from "../../../components/Logo/Logo";
 
 const Footer = () => {
   return (
-    <footer className="footer footer-horizontal footer-center bg-secondary text-white rounded-2xl p-10">
+    <footer className="footer footer-horizontal footer-center bg-[#0B0B0B] text-white rounded-2xl p-10">
       <div>
         <Logo />
         <p className="text-[#DADADA] my-5">
@@ -12,7 +12,7 @@ const Footer = () => {
           deliver on time, every time.
         </p>
         <div className="w-full">
-          <hr className="w-[1100px] border-t-2 border-dashed border-[#0B0B0B]" />
+          <hr className="w-[1100px] border-t-2 border-dashed border-secondary" />
         </div>
         <div className="flex gap-3 text-[10px] my-5 font-light">
           <p>services</p>
@@ -23,7 +23,7 @@ const Footer = () => {
           <p>Contact</p>
         </div>
         <div className="w-full">
-          <hr className="w-[1100px] border-t-2 border-dashed border-[#0B0B0B]" />
+          <hr className="w-[1100px] border-t-2 border-dashed border-secondary" />
         </div>
       </div>
 

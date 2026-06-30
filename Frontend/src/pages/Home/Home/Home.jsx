@@ -2,6 +2,11 @@ import React from "react";
 import Banner from "../Banner/Banner";
 import { WorkingCards } from "./WorkingCards";
 import Workings from "./Workings";
+import Services from "../Services/Services";
+import Brands from "../Brands/Brands";
+import Reviews from "../Reviews/Reviews";
+
+const reviewsPromise=fetch('/reviews.json').then(res=>res.json());
 const Home = () => {
   return (
     <div className="m-5">
@@ -13,7 +18,10 @@ const Home = () => {
             <Workings key={card.id} card={card} />
           ))}
         </div>
-      </div>
+      </div >
+      <div  className="mb-10"><Services/></div>
+      <div  className="mb-10"><Brands/></div>
+      <div  className="mb-10"><Reviews reviewsPromise={reviewsPromise}/></div>
     </div>
   );
 };
